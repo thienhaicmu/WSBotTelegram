@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-WSBotTele-C6D963B0-E58C-49C2-85C9-2B82FF3A14F9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.30" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.30" />
+    <PackageReference Include="Telegram.Bot" Version="18.0.0" />
+  </ItemGroup>
+</Project>

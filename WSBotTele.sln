@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSBotTele", "WSBotTele\WSBotTele.csproj", "{EB28A9F1-6DA9-4AAF-88A6-B78C03E1456E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB28A9F1-6DA9-4AAF-88A6-B78C03E1456E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB28A9F1-6DA9-4AAF-88A6-B78C03E1456E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB28A9F1-6DA9-4AAF-88A6-B78C03E1456E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB28A9F1-6DA9-4AAF-88A6-B78C03E1456E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18F811A6-F50F-4093-B9DA-D038ED841F30}
+	EndGlobalSection
+EndGlobal
