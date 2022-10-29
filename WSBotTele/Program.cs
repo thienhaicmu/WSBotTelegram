@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using WSBotTele.Configs;
 using WSBotTele.Processes;
+using WSBotTele.Services;
 using WSBotTele.Worker;
 
 namespace WSBotTele
@@ -26,8 +27,10 @@ namespace WSBotTele
         private static void configureServices(HostBuilderContext context, IServiceCollection services)
         {
             services.Configure<BotConfig>(context.Configuration.GetSection("BotTelegam"));
+            services.Configure<RedisConfig>(context.Configuration.GetSection("Redis"));
             services.AddLogging();
             services.AddSingleton<IBotProcess, BotProcess>();
+            services.AddSingleton<IRedisClient, RedisClient>();
             services.AddHostedService<BotTelegramWorker>();
         }
     }
