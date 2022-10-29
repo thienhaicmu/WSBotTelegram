@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ng Thanh Cong\\Desktop\\WorkerServices\\WSBotTele\\WSBotTele\\WSBotTele.csproj": {}
+    "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ng Thanh Cong\\Desktop\\WorkerServices\\WSBotTele\\WSBotTele\\WSBotTele.csproj": {
+    "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ng Thanh Cong\\Desktop\\WorkerServices\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
+        "projectUniqueName": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
         "projectName": "WSBotTele",
-        "projectPath": "C:\\Users\\Ng Thanh Cong\\Desktop\\WorkerServices\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
-        "packagesPath": "C:\\Users\\Ng Thanh Cong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ng Thanh Cong\\Desktop\\WorkerServices\\WSBotTele\\WSBotTele\\obj\\",
+        "projectPath": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
+        "packagesPath": "C:\\Users\\nxgth\\.nuget\\packages\\",
+        "outputPath": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ng Thanh Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nxgth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[3.1.30, )"
             },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.70, )"
+            },
             "Telegram.Bot": {
               "target": "Package",
               "version": "[18.0.0, )"
@@ -63,18 +67,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.25, 3.1.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

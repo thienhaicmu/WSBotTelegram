@@ -47,3 +47,97 @@ C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\obj\Debug\netc
 C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.dll
 C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.pdb
 C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.genruntimeconfig.cache
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Ng Thanh Cong\Desktop\WorkerServices\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\appsettings.Development.json
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\appsettings.json
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.exe
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.deps.json
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.runtimeconfig.json
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.runtimeconfig.dev.json
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\WSBotTele.pdb
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.WindowsServices.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.EventSource.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.csprojAssemblyReference.cache
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.AssemblyInfoInputs.cache
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.AssemblyInfo.cs
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.csproj.CoreCompileInputs.cache
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.csproj.CopyComplete
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.dll
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.pdb
+Z:\_CODE\_Projects\WSBotTele\WSBotTele\obj\Debug\netcoreapp3.1\WSBotTele.genruntimeconfig.cache
