@@ -10,7 +10,7 @@ namespace WSBotTele.Services
 {
     interface IBotTask
     {
-        string SaveData(long chatId, string message);
+        string SaveData(long chatId, string UserName, string message);
         string Caculate(long chatID, string Location);
     }
     class BotTask : IBotTask
@@ -18,6 +18,7 @@ namespace WSBotTele.Services
         private static IRedisClient _redis;
         private static RedisConfig _redisConfig;
         private string _key;
+        private int keyarr;
         private Dictionary<string, string> _dBranchs = new Dictionary<string, string>
         {
             { "HNI", "Hà Nội"},
@@ -97,9 +98,9 @@ namespace WSBotTele.Services
         {
             _redis = redis;
             _redisConfig = option.Value;
-            _key = _redisConfig.dKeys["key1"];
+            _key = _redisConfig.dKeys["key11"];
         }
-        public string SaveData(long chatId, string message)
+        public string SaveData(long chatId, string UserName, string message)
         {
             try
             {
@@ -109,15 +110,15 @@ namespace WSBotTele.Services
                 {
                     l = new List<BaseModel>();
                 }
-                
+
                 //convert from string to BaseModel
-                List<BaseModel> lNew = GetListBaseModelFromMessage(chatId, message);
+                List<BaseModel> lNew = GetListBaseModelFromMessage(chatId, UserName, message);
                 l.AddRange(lNew);
-                
+
                 //save object BaseModel to Redis
                 bool isSaveSuccess = _redis.SetValue(_key, l);
 
-                return isSaveSuccess ? "Save success" : "Save fail";
+                return isSaveSuccess ? "OK!" : "Không lưu được!";
             }
             catch
             {
@@ -139,13 +140,14 @@ namespace WSBotTele.Services
                 var gr = l.GroupBy(c => new
                 {
                     c.ChatID,
+                    c.UserName,
                     c.Location,
                     c.Type,
                     c.Key
                 })
                     .Select(p => new BaseModel
                     {
-                        ChatID = p.Key.ChatID,
+                        UserName = p.Key.UserName,
                         Location = p.Key.Location,
                         Type = p.Key.Type,
                         Key = p.Key.Key,
@@ -156,11 +158,13 @@ namespace WSBotTele.Services
                 {
                     string lineFormat = @"
                     @CN
-                    @Type: @Key @Value
+                    @UserName (UserID)
+                    @Type : số: @Key - tổng tiền: @Value
                 ==============================
                 ";
                     string tmp = lineFormat
                         .Replace("@CN", item.Location)
+                        .Replace("@UserName", item.UserName.ToString())
                         .Replace("@Type", item.Type)
                         .Replace("@Key", item.Key.ToString())
                         .Replace("@Value", item.Value.ToString());
@@ -169,48 +173,117 @@ namespace WSBotTele.Services
                 }
                 return res;
             }
-            catch 
+            catch
             {
                 return "Dữ liệu đầu vào sai định dạng";
                 throw;
             }
         }
 
-        private List<BaseModel> GetListBaseModelFromMessage(long chatId, string message)
+        private List<BaseModel> GetListBaseModelFromMessage(long chatId, string UserName, string message)
         {
             //create list result for response
             List<BaseModel> l = new List<BaseModel>();
 
             //check null message
             if (string.IsNullOrEmpty(message)) return null;
-
+            string[] arrSplit = { };
             //get line by line
-            string[] arrSplit = message.Split("\n");
-            
+            if (message.Contains("\n"))
+            {
+                arrSplit = message.Split("\n");
+            }
+            if (message.Contains(" "))
+            {
+                arrSplit = message.Split(" ");
+            }
+
             //get location, if not exist return
             string location = arrSplit[0].Trim();
             if (!_dBranchs.ContainsKey(location.ToUpper())) return null;
 
+            string arrValue = "";
 
             for (int i = 1; i < arrSplit.Length; i++)
             {
                 //create result variable of function
                 BaseModel result = new BaseModel();
                 result.ChatID = chatId;
+                result.UserName = UserName;
                 result.Location = location;
-                
-                //get type 
-                string type = arrSplit[i].Split(":")[0];
-                result.Type = type.Trim();
+                string[] arrType = { };
+                string type = "";
+                string strKeyValue = "";
+                string[] arrKeyValue = { };
+
+
+
 
                 //get key & value
-                string strKeyValue = arrSplit[i].Split(":")[1];
-                int.TryParse(strKeyValue.Split("x")[0], out int key);
-                int.TryParse(strKeyValue.Split("x")[1], out int value);
-                result.Key = key;
-                result.Value = value;
+                if ((arrSplit[i].Contains("x") && !arrSplit[i].Contains(":")) && (arrSplit[i].Contains("x") && !arrSplit[i].Contains(".")))
+                {
+                    arrType = arrSplit[i].Split("x");
+                    arrValue = arrType[1].ToLower();
+                    type = arrType[0].ToLower();
+                    result.Type = type.Trim().ToLower();
+                    strKeyValue = arrType[1];
+                }
+                else
+                {
+                    if (arrSplit[i].Contains(":"))
+                        arrType = arrSplit[i].Split(":");
+                    else
+                   if (arrSplit[i].Contains("."))
+                        arrType = arrSplit[i].Split(".");
+                    else
+                   if (arrSplit[i].Contains(","))
+                        arrType = arrSplit[i].Split(",");
+                    //get type 
+                    type = arrType[0].ToLower();
+                    result.Type = type.Trim().ToLower();
+                    strKeyValue = arrType[1];
+                    arrValue = strKeyValue.Split("x")[1].ToLower();
+                    if (!strKeyValue.Contains(","))
+                        keyarr = Convert.ToInt32(strKeyValue.Split("x")[0]);
+                }
 
-                l.Add(result);
+                if (arrValue.Contains("n"))
+                {
+                    arrValue = arrValue.Replace("n", "");
+                }
+                if (arrValue.Contains("k"))
+                {
+                    arrValue = arrValue.Replace("k", "");
+                }
+                if (strKeyValue.Contains(","))
+                {
+                    arrKeyValue = strKeyValue.Split("x")[0].Split(",");
+                    for (int j = 0; j < arrKeyValue.Length; j++)
+                    {
+                        keyarr = Convert.ToInt32(arrKeyValue[j]);
+                        l.Add(new BaseModel() { ChatID = chatId, UserName = UserName, Location = location, Type = type.Trim(), Key = keyarr, Value = Convert.ToInt32(arrValue) });
+                    }
+
+                }
+                else
+                 if (strKeyValue.Contains("."))
+                {
+                    arrKeyValue = strKeyValue.Split("x")[0].Split(".");
+                    for (int j = 0; j < arrKeyValue.Length; j++)
+                    {
+                        keyarr = Convert.ToInt32(arrKeyValue[j]);
+                        l.Add(new BaseModel() { ChatID = chatId, UserName = UserName, Location = location, Type = type.Trim(), Key = keyarr, Value = Convert.ToInt32(arrValue) });
+                    }
+
+                }
+                else
+                {
+                    int.TryParse(arrValue, out int value);
+                    result.Key = keyarr;
+                    result.Value = value;
+                    l.Add(result);
+                }
+
             }
 
             return l;

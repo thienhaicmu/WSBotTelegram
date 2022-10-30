@@ -1630,19 +1630,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nxgth\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
+      "projectUniqueName": "E:\\WSBotTelegram\\WSBotTele\\WSBotTele.csproj",
       "projectName": "WSBotTele",
-      "projectPath": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\WSBotTele.csproj",
-      "packagesPath": "C:\\Users\\nxgth\\.nuget\\packages\\",
-      "outputPath": "Z:\\_CODE\\_Projects\\WSBotTele\\WSBotTele\\obj\\",
+      "projectPath": "E:\\WSBotTelegram\\WSBotTele\\WSBotTele.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "E:\\WSBotTelegram\\WSBotTele\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nxgth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1654,7 +1654,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1666,7 +1665,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
@@ -1700,7 +1698,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

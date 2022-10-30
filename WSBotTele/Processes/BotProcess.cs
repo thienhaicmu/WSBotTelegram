@@ -59,10 +59,12 @@ namespace WSBotTele.Processes
 
         async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
-            var message = update.Message;
+           var message = update.Message;
             string messageText = message.Text;
             var chatId = message.Chat.Id; //lấy id của phòng chat hiện tại
-
+            var UserName = message.Chat.FirstName;
+            if (string.IsNullOrEmpty(messageText))
+                messageText = "";
             string trimedMessageText = messageText.Trim().ToLower();
             //string replyMessageText = "Không có chi nhánh này";
 
@@ -80,7 +82,7 @@ namespace WSBotTele.Processes
             {
                 await botClient.SendTextMessageAsync(
                    chatId: chatId,
-                   text: "[Autorep]: " + _botTask.SaveData(chatId, messageText),
+                   text: "[Autorep]: " + _botTask.SaveData(chatId, UserName, messageText),
                    cancellationToken: cancellationToken
                    );
             }

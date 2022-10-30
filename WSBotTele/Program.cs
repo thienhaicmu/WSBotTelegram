@@ -18,6 +18,7 @@ namespace WSBotTele
                {
                    logging.ClearProviders();
                    logging.AddConsole();
+
                    logging.AddEventLog();
                })
                // Essential to run this as a window service
