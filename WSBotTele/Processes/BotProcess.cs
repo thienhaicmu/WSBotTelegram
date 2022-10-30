@@ -26,14 +26,16 @@ namespace WSBotTele.Processes
     class BotProcess : IBotProcess
     {
         private readonly IRedisClient _redis;
+        private readonly IBotTask _botTask;
         private readonly BotConfig _config;
         private static TelegramBotClient botClient;
         private static CancellationTokenSource cts;
 
-        public BotProcess(IOptions<BotConfig> config, IRedisClient redis)
+        public BotProcess(IOptions<BotConfig> config, IRedisClient redis, IBotTask botTask)
         {
             _config = config.Value;
             _redis = redis;
+            _botTask = botTask;
         }
 
         public async Task ListenIncommingMessage()
@@ -66,20 +68,19 @@ namespace WSBotTele.Processes
 
             Console.WriteLine($"Received a '{messageText}' message in chat {chatId}.");
 
-            if(trimedMessageText.Contains("sum"))
+            if(trimedMessageText.Contains("rp"))
             {
                 await botClient.SendTextMessageAsync(
                    chatId: chatId,
-                   text: "[Autorep] SUM: " + Caculate(chatId, ""),
+                   text: "[Autorep] kq: " + _botTask.Caculate(chatId, messageText),
                    cancellationToken: cancellationToken
                    );
             }
             else
             {
-                SaveData(chatId);
                 await botClient.SendTextMessageAsync(
                    chatId: chatId,
-                   text: "[Autorep] Save data to redis",
+                   text: "[Autorep]: " + _botTask.SaveData(chatId, messageText),
                    cancellationToken: cancellationToken
                    );
             }
@@ -104,37 +105,5 @@ namespace WSBotTele.Processes
             cts = new CancellationTokenSource();
         }
 
-        private bool SaveData(long chatId)
-        {
-            List<BaseModel> l = _redis.GetValue<List<BaseModel>>("key1");
-            if(l == null)
-            {
-                l = new List<BaseModel>();
-            }
-            l.Add(new BaseModel
-            {
-                ChatID = chatId,
-                Location = "CN1",
-                KeyA = "A",
-                ValueA = 10,
-                KeyB = "B",
-                ValueB = 20,
-            });
-            return _redis.SetValue("key1", l);
-        }
-        private int Caculate(long chatID, string Location)
-        {
-            List<BaseModel> resListBase = _redis.GetValue<List<BaseModel>>("key1");
-            if(resListBase == null)
-            {
-                return 0;
-            }
-            int result = 0;
-            resListBase.ForEach(item =>
-            {
-                result += item.ValueA;
-            });
-            return result;
-        }
     }
 }

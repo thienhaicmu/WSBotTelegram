@@ -31,6 +31,7 @@ namespace WSBotTele
             services.AddLogging();
             services.AddSingleton<IBotProcess, BotProcess>();
             services.AddSingleton<IRedisClient, RedisClient>();
+            services.AddSingleton<IBotTask, BotTask>();
             services.AddHostedService<BotTelegramWorker>();
         }
     }
